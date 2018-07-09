@@ -1,0 +1,45 @@
+.footer {
+    padding: 13rem 15rem;
+    width: 100%;
+
+    &__holder {
+        content: "";
+        display: table;
+        clear: both;
+        margin: 0 auto;
+        width: 80%;
+        
+    }
+
+    &__heading {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__box {
+        width: 33.33333%;
+        float: left;
+
+        @media (max-width: 45em) {
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: var(--color-grey-dark-2);
+    }
+
+    &__copy {
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        color: var(--color-grey-dark-3);
+        text-align: center;
+    }
+}

@@ -1,0 +1,154 @@
+.card {
+    display: flex;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    
+
+    &__box {
+        flex-basis: 30%;
+        margin: 0 1.5rem;
+        margin-bottom: 3rem;
+        box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        transition: all .3s;
+
+        &:hover {
+            box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 60em) {
+            flex-basis: 46%;
+        }
+
+        @media (max-width: 45.44em) {
+            flex-basis: 100%;
+            margin: 0 0rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__img {
+        height: 30rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__desc {
+        padding: 2rem;
+    }
+
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+
+        ul {
+            list-style: none;
+        }
+    }
+
+    &__rating {
+        display: flex;
+        margin-bottom: 2rem;
+
+        svg {
+            width: 1.8rem;
+            height: 1.8rem;
+            fill: rgb(189, 189, 2);
+
+            &:not(:last-child) {
+                margin-right: 3px;
+            }
+        }
+
+        p {
+            margin-left: 2.5rem;
+            font-size: 1.4rem;
+        }
+
+        .p-light {
+            color: var(--color-grey-light-3);
+        }
+    }
+}
+
+
+///////////////////////////////////////////////
+//////---------- NEWS CARD ---------------/////
+///////////////////////////////////////////////
+.newscard {
+    display: flex;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
+    &__box {
+        width: 33.333333%;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        margin: 0 1.5rem;
+        transition: all .3s;
+
+        &:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__trend {
+        padding: 1.5rem;
+        font-size: 1.4rem;font-size: 1.4rem;
+
+        span:first-child {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-right: 2rem;
+        }
+    }
+
+    &__img {
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__caption {
+        padding: 2rem;
+    }
+
+    &__head {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+    &__para {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    &__readmore {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--color-primary-dark);
+    }
+}

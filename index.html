@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOTOUR</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+    <!-- DATE PICKER CSS -->
+    <link rel="stylesheet" href="assets/css/datepicker.css">
+
+    <!-- OWL CAROUSAL CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body onscroll="myFnc()">
+
+    <!-- Header Start-->
+    <header class="header" id="home">
+        <!-- Navigation Start -->
+        <div class="navbar__header">
+            <nav class="navbar">
+                <div class="navbar__brand">
+                    <h2>Do
+                        <span>Tour</span>
+                    </h2>
+                </div>
+                <div class="navbar__holder" id="navbar__menu">
+                    <ul class="navbar__list">
+                        <li class="navbar__item active">
+                            <a href="#home" class="navbar__link" data-target="home">Home</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#destination" class="navbar__link" data-target="destination">Destination</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#package" class="navbar__link" data-target="package">Packages</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#offer" class="navbar__link" data-target="offer">Special Offers</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#blog" class="navbar__link" data-target="blog">Blog</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#subscription" class="navbar__link" data-target="subscription">Subscription</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar__mob" id="navbar__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+        <!-- Navigation End -->
+
+        <!-- Hero Start -->
+        <div class="hero">
+            <div class="hero__box">
+                <h1 class="hero__heading">Explore the Beauty
+                    <br> of the Beautiful
+                    <br> World</h1>
+            </div>
+        </div>
+    </header>
+    <!-- Header End-->
+
+
+    <!-- Travel Information Search Start -->
+    <section class="travelinfo">
+        <div class="travelinfo__container">
+            <ul class="travelinfo__tab" id="travelinfo__tab">
+                <li class="travelinfo__list active__tab" id="tour">Tours</li>
+                <li class="travelinfo__list" id="hotel">Hotels</li>
+                <li class="travelinfo__list" id="flight">Flights</li>
+            </ul>
+            <div class="travelinfo__holder" id="tour__tab">
+                <div class="travelinfo__item">
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">Destination</h2>
+                        <div class="travelinfo__dest">
+                            <select name="dest" id="" class="travelinfo__input">
+                                <option value="">Enter your Destination country</option>
+                                <option value="">Turkey</option>
+                                <option value="">Germany</option>
+                                <option value="">Italy</option>
+                            </select>
+                        </div>
+                        <div class="travelinfo__dest">
+                            <select name="dest" id="" class="travelinfo__input">
+                                <option value="">Enter your Destination location</option>
+                                <option value="">Turkey</option>
+                                <option value="">Germany</option>
+                                <option value="">Italy</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">Check In</h2>
+                        <div class="travelinfo__date">
+                            <input type="date" class="travelinfo__input">
+                        </div>
+                    </div>
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">Check Out</h2>
+                        <div class="travelinfo__date">
+                            <input type="date" class="travelinfo__input">
+                        </div>
+                    </div>
+
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">Duration</h2>
+                        <div class="travelinfo__duration">
+                            <select name="dest" id="" class="travelinfo__input">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">Members</h2>
+                        <div class="travelinfo__duration">
+                            <select name="dest" id="" class="travelinfo__input">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <button class="search__btn">Search</button>
+                </div>
+            </div>
+
+
+            <div class="travelinfo__holder" id="hotel__tab">
+                <div class="travelinfo__item">
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">Destination</h2>
+                        <div class="travelinfo__dest">
+                            <select name="dest" id="" class="travelinfo__input">
+                                <option value="">Enter your Destination country</option>
+                                <option value="">Turkey</option>
+                                <option value="">Germany</option>
+                                <option value="">Italy</option>
+                            </select>
+                        </div>
+                        <div class="travelinfo__dest">
+                            <select name="dest" id="" class="travelinfo__input">
+                                <option value="">Enter your Destination location</option>
+                                <option value="">Turkey</option>
+                                <option value="">Germany</option>
+                                <option value="">Italy</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">Check In</h2>
+                        <div class="travelinfo__date">
+                            <input type="text" value="12/12/2018" data-toggle="datepicker" class="travelinfo__input">
+                        </div>
+                    </div>
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">Check Out</h2>
+                        <div class="travelinfo__date">
+                            <input type="date" class="travelinfo__input">
+                        </div>
+                    </div>
+
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">Duration</h2>
+                        <div class="travelinfo__duration">
+                            <select name="dest" id="" class="travelinfo__input">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">Members</h2>
+                        <div class="travelinfo__duration">
+                            <select name="dest" id="" class="travelinfo__input">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <button class="search__btn">Search</button>
+                </div>
+            </div>
+
+
+            <div class="travelinfo__holder" id="flight__tab">
+                <div class="travelinfo__item">
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">From</h2>
+                        <div class="travelinfo__dest">
+                            <select name="dest" id="" class="travelinfo__input">
+                                <option value="">Enter your Destination country</option>
+                                <option value="">Turkey</option>
+                                <option value="">Germany</option>
+                                <option value="">Italy</option>
+                            </select>
+                        </div>
+                        <h2 class="travelinfo__head">To</h2>
+                        <div class="travelinfo__dest">
+                            <select name="dest" id="" class="travelinfo__input">
+                                <option value="">Enter your Destination location</option>
+                                <option value="">Turkey</option>
+                                <option value="">Germany</option>
+                                <option value="">Italy</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">Departure</h2>
+                        <div class="travelinfo__dest">
+                            <input type="date" class="travelinfo__input">
+                        </div>
+                        <h2 class="travelinfo__head">Class</h2>
+                        <div class="travelinfo__dest">
+                            <select name="dest" id="" class="travelinfo__input">
+                                <option value="">Enter Class</option>
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">Return</h2>
+                        <div class="travelinfo__date">
+                            <input type="date" class="travelinfo__input">
+                        </div>
+                    </div>
+
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">Adults</h2>
+                        <div class="travelinfo__duration">
+                            <select name="dest" id="" class="travelinfo__input">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="travelinfo__box">
+                        <h2 class="travelinfo__head">Childs</h2>
+                        <div class="travelinfo__duration">
+                            <select name="dest" id="" class="travelinfo__input">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <button class="search__btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Travel Information Search End -->
+
+    <!-- Travel Feature Start -->
+    <section class="feature">
+        <div class="feature__box">
+            <div class="feature__img">
+                <svg class="feature__icon">
+                    <use xlink:href="img/spring.svg#icon-travel-case"></use>
+                </svg>
+            </div>
+            <div class="feature__text">
+                <h2 class="feature__head">Amazing Tour Packages</h2>
+                <p class="feature__para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio officia excepturi.</p>
+            </div>
+        </div>
+        <div class="feature__box">
+            <div class="feature__img">
+                <svg class="feature__icon">
+                    <use xlink:href="img/spring.svg#icon-office"></use>
+                </svg>
+            </div>
+            <div class="feature__text">
+                <h2 class="feature__head">Book Topclass Hotel</h2>
+                <p class="feature__para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio officia excepturi.</p>
+            </div>
+        </div>
+        <div class="feature__box">
+            <div class="feature__img">
+                <svg class="feature__icon">
+                    <use xlink:href="img/spring.svg#icon-airplane"></use>
+                </svg>
+            </div>
+            <div class="feature__text">
+                <h2 class="feature__head">Online Flight Booking</h2>
+                <p class="feature__para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio officia excepturi.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Travel Feature End -->
+
+
+    <!-- Travel Package Gallery Start -->
+    <section class="packages" id="destination">
+        <div class="heading">
+            <h2>Top Destination</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam distinctio fuga deleniti eos alias esse?</p>
+        </div>
+        <div class="packages__container">
+            <div class="packages__item-1">
+                <img src="img/singapore.jpg" class="packages__img" alt="">
+                <div class="packages__desc">
+                    <h2 class="packages__head">Singapore</h2>
+                    <p class="packages__detail">
+                        20 Tours
+                        <span>15 Places</span>
+                    </p>
+                </div>
+            </div>
+            <div class="packages__item-2">
+                <img src="img/china.jpg" class="packages__img" alt="">
+                <div class="packages__desc">
+                    <h2 class="packages__head">China</h2>
+                    <p class="packages__detail">
+                        12 Tours
+                        <span>9 Places</span>
+                    </p>
+                </div>
+            </div>
+            <div class="packages__item-3">
+                <img src="img/germany.jpg" class="packages__img" alt="">
+                <div class="packages__desc">
+                    <h2 class="packages__head">Germany</h2>
+                    <p class="packages__detail">
+                        25 Tours
+                        <span>10 Places</span>
+                    </p>
+                </div>
+            </div>
+            <div class="packages__item-4">
+                <img src="img/bali.jpg" class="packages__img" alt="">
+                <div class="packages__desc">
+                    <h2 class="packages__head">Bali</h2>
+                    <p class="packages__detail">
+                        18 Tours
+                        <span>9 Places</span>
+                    </p>
+                </div>
+            </div>
+            <div class="packages__item-5">
+                <img src="img/czech-republic.jpg" class="packages__img" alt="">
+                <div class="packages__desc">
+                    <h2 class="packages__head">Czech-Republic</h2>
+                    <p class="packages__detail">
+                        18 Tours
+                        <span>12 Places</span>
+                    </p>
+                </div>
+            </div>
+            <div class="packages__item-6">
+                <img src="img/italy.jpg" class="packages__img" alt="">
+                <div class="packages__desc">
+                    <h2 class="packages__head">Italy</h2>
+                    <p class="packages__detail">
+                        14 Tours
+                        <span>8 Places</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Travel Package Gallery End -->
+
+
+    <!-- Travel Offer Start -->
+    <section class="offer-one">
+        <div class="offer-one__desc">
+            <h2>Join With Us Within 21 January, 2018 And Get Upto 40% Discount</h2>
+            <button>Join Now</button>
+        </div>
+    </section>
+
+
+    <section class="special-package" id="package">
+        <div class="heading">
+            <h2>Packages</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam distinctio fuga deleniti eos alias esse?</p>
+        </div>
+
+        <div class="card">
+            <div class="card__box">
+                <div class="card__img">
+                    <img src="img/singapore.jpg" alt="">
+                </div>
+                <div class="card__desc">
+                    <div class="card__price">
+                        <p>Singapore</p>
+                        <p>$1444</p>
+                    </div>
+                    <div class="card__list">
+                        <ul>
+                            <li>5 Daays 6 Nights</li>
+                            <li>Transportation</li>
+                        </ul>
+                        <ul>
+                            <li>5 Star Accomodation</li>
+                            <li>Food Facilities</li>
+                        </ul>
+                    </div>
+                    <div class="card__rating">
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <p>2544 Reviews</p>
+                    </div>
+                    <button class="card__btn">Book Now</button>
+                </div>
+            </div>
+
+
+            <div class="card__box">
+                <div class="card__img">
+                    <img src="img/italy.jpg" alt="">
+                </div>
+                <div class="card__desc">
+                    <div class="card__price">
+                        <p>Italy</p>
+                        <p>$1444</p>
+                    </div>
+                    <div class="card__list">
+                        <ul>
+                            <li>5 Daays 6 Nights</li>
+                            <li>Transportation</li>
+                        </ul>
+                        <ul>
+                            <li>5 Star Accomodation</li>
+                            <li>Food Facilities</li>
+                        </ul>
+                    </div>
+                    <div class="card__rating">
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <p>2544 Reviews</p>
+                    </div>
+                    <button class="card__btn">Book Now</button>
+                </div>
+            </div>
+
+
+            <div class="card__box">
+                <div class="card__img">
+                    <img src="img/germany.jpg" alt="">
+                </div>
+                <div class="card__desc">
+                    <div class="card__price">
+                        <p>Germany</p>
+                        <p>$1444</p>
+                    </div>
+                    <div class="card__list">
+                        <ul>
+                            <li>5 Daays 6 Nights</li>
+                            <li>Transportation</li>
+                        </ul>
+                        <ul>
+                            <li>5 Star Accomodation</li>
+                            <li>Food Facilities</li>
+                        </ul>
+                    </div>
+                    <div class="card__rating">
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <p>2544 Reviews</p>
+                    </div>
+                    <button class="card__btn">Book Now</button>
+                </div>
+            </div>
+
+
+            <div class="card__box">
+                <div class="card__img">
+                    <img src="img/bali.jpg" alt="">
+                </div>
+                <div class="card__desc">
+                    <div class="card__price">
+                        <p>Bali</p>
+                        <p>$1444</p>
+                    </div>
+                    <div class="card__list">
+                        <ul>
+                            <li>5 Daays 6 Nights</li>
+                            <li>Transportation</li>
+                        </ul>
+                        <ul>
+                            <li>5 Star Accomodation</li>
+                            <li>Food Facilities</li>
+                        </ul>
+                    </div>
+                    <div class="card__rating">
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <p>2544 Reviews</p>
+                    </div>
+                    <button class="card__btn">Book Now</button>
+                </div>
+            </div>
+
+
+            <div class="card__box">
+                <div class="card__img">
+                    <img src="img/czech-republic.jpg" alt="">
+                </div>
+                <div class="card__desc">
+                    <div class="card__price">
+                        <p>Czech Republic</p>
+                        <p>$1444</p>
+                    </div>
+                    <div class="card__list">
+                        <ul>
+                            <li>5 Daays 6 Nights</li>
+                            <li>Transportation</li>
+                        </ul>
+                        <ul>
+                            <li>5 Star Accomodation</li>
+                            <li>Food Facilities</li>
+                        </ul>
+                    </div>
+                    <div class="card__rating">
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <p>2544 Reviews</p>
+                    </div>
+                    <button class="card__btn">Book Now</button>
+                </div>
+            </div>
+
+
+            <div class="card__box">
+                <div class="card__img">
+                    <img src="img/china.jpg" alt="">
+                </div>
+                <div class="card__desc">
+                    <div class="card__price">
+                        <p>China</p>
+                        <p>$1444</p>
+                    </div>
+                    <div class="card__list">
+                        <ul>
+                            <li>5 Daays 6 Nights</li>
+                            <li>Transportation</li>
+                        </ul>
+                        <ul>
+                            <li>5 Star Accomodation</li>
+                            <li>Food Facilities</li>
+                        </ul>
+                    </div>
+                    <div class="card__rating">
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/spring.svg#icon-star-full"></use>
+                        </svg>
+                        <p>2544 Reviews</p>
+                    </div>
+                    <button class="card__btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Travel Offer End -->
+
+
+    <!-- Testemonial section Start -->
+    <section class="testimonial">
+        <div class="heading">
+            <h2>Clients Review</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="testimonial__container owl-carousel owl-theme owl-loaded">
+            <div class="testimonial__box">
+                <div class="testimonial__img">
+                    <img src="img/user-1.jpg" alt="">
+                </div>
+                <p class="testimonial__cmt">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam est dicta ipsum temporibus ullam debitis recusandae aliquid
+                    officia.
+                </p>
+                <p class="testimonial__name">Avijit Mandal</p>
+                <p class="testimonial__place">Midnapore, India</p>
+            </div>
+
+            <div class="testimonial__box">
+                <div class="testimonial__img">
+                    <img src="img/user-2.jpg" alt="">
+                </div>
+                <p class="testimonial__cmt">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam est dicta ipsum temporibus ullam debitis recusandae aliquid
+                    officia.
+                </p>
+                <p class="testimonial__name">Biswajit Mandal</p>
+                <p class="testimonial__place">Midnapore, India</p>
+            </div>
+
+            <div class="testimonial__box">
+                <div class="testimonial__img">
+                    <img src="img/user-3.jpg" alt="">
+                </div>
+                <p class="testimonial__cmt">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam est dicta ipsum temporibus ullam debitis recusandae aliquid
+                    officia.
+                </p>
+                <p class="testimonial__name">Jonh Doe</p>
+                <p class="testimonial__place">Midnapore, India</p>
+            </div>
+
+            <div class="testimonial__box">
+                <div class="testimonial__img">
+                    <img src="img/user-4.jpg" alt="">
+                </div>
+                <p class="testimonial__cmt">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam est dicta ipsum temporibus ullam debitis recusandae aliquid
+                    officia.
+                </p>
+                <p class="testimonial__name">Priya Roy</p>
+                <p class="testimonial__place">Midnapore, India</p>
+            </div>
+        </div>
+    </section>
+    <!-- Testemonial section End -->
+
+
+    <!-- Special Offer section Start -->
+    <section class="special-offer" id="offer">
+        <div class="special-offer__desc">
+            <h2 class="sub-heading">Thailand</h2>
+            <div class="card__rating">
+                <svg>
+                    <use xlink:href="img/spring.svg#icon-star-full"></use>
+                </svg>
+                <svg>
+                    <use xlink:href="img/spring.svg#icon-star-full"></use>
+                </svg>
+                <svg>
+                    <use xlink:href="img/spring.svg#icon-star-full"></use>
+                </svg>
+                <svg>
+                    <use xlink:href="img/spring.svg#icon-star-full"></use>
+                </svg>
+                <svg>
+                    <use xlink:href="img/spring.svg#icon-star-full"></use>
+                </svg>
+                <p class="p-light">2544 Reviews</p>
+            </div>
+            <p class="special-offer__list">
+                <span>5 Days 6 Nights</span>
+                <span>2 Person</span>
+                <span>5 Star Accomodation</span>
+            </p>
+            <p class="special-offer__list">
+                <span>Transportation</span>
+                <span>Food Facilities</span>
+            </p>
+
+            <p class="special-offer__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates neque cupiditate ut, rerum voluptas dolorem
+                veritatis assumenda qui dolore. Fugiat consequatur animi dolorum accusamus voluptatibus blanditiis itaque
+                beatae facilis!
+            </p>
+            <button class="card__btn">Book Now</button>
+        </div>
+    </section>
+    <!-- Special Offer section End -->
+
+
+    <!-- Latest News section Start -->
+    <section class="news" id="blog">
+        <div class="heading">
+            <h2>Latest News</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="newscard">
+            <div class="newscard__box">
+                <div class="newscard__trend">
+                    <span>Trending News</span>
+                    <span>15 Novembar 2018</span>
+                </div>
+                <div class="newscard__img">
+                    <img src="img/china.jpg" alt="">
+                </div>
+                <div class="newscard__caption">
+                    <h2 class="newscard__head">Discover On Beautiful Weather, Fantastic Foods And Historical Place In Prag</h2>
+                    <p class="newscard__para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel accusantium repudiandae eveniet nam labore
+                        aspernatur nobis maiores et maxime numquam.</p>
+                    <p class="newscard__readmore">Read More</p>
+                </div>
+
+            </div>
+
+            <div class="newscard__box">
+                <div class="newscard__trend">
+                    <span>Trending News</span>
+                    <span>15 Novembar 2018</span>
+                </div>
+                <div class="newscard__img">
+                    <img src="img/singapore.jpg" alt="">
+                </div>
+                <div class="newscard__caption">
+                    <h2 class="newscard__head">Discover On Beautiful Weather, Fantastic Foods And Historical Place In Prag</h2>
+                    <p class="newscard__para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel accusantium repudiandae eveniet nam labore
+                        aspernatur nobis maiores et maxime numquam.</p>
+                    <p class="newscard__readmore">Read More</p>
+                </div>
+
+            </div>
+
+
+            <div class="newscard__box">
+                <div class="newscard__trend">
+                    <span>Trending News</span>
+                    <span>15 Novembar 2018</span>
+                </div>
+                <div class="newscard__img">
+                    <img src="img/czech-republic.jpg" alt="">
+                </div>
+                <div class="newscard__caption">
+                    <h2 class="newscard__head">Discover On Beautiful Weather, Fantastic Foods And Historical Place In Prag</h2>
+                    <p class="newscard__para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel accusantium repudiandae eveniet nam labore
+                        aspernatur nobis maiores et maxime numquam.</p>
+                    <p class="newscard__readmore">Read More</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Special Offer section End -->
+
+
+    <!-- Call to Action section Start -->
+    <section class="cta" id="subscription">
+        <div class="cta__box">
+            <h2 class="cta__head">Join Our Subscribers List To Get Regular Update</h2>
+            <h3 class="cta__head-sub">Subscribe Now. We will send you Best offer for your Trip</h3>
+            <div>
+                <div class="cta__subs">
+                    <input type="text" class="cta__input" placeholder="Enter Your Email Here">
+                    <button class="cta__btn">Subscribe</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Call to Action section End -->
+
+
+    <!-- Footer section Start -->
+    <section class="footer">
+        <div class="footer__holder">
+            <div class="footer__box">
+                <h2 class="footer__heading">Link</h2>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Home</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Destination</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Packages</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Special Offers</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Blog</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Subscription</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="footer__box">
+                <h2 class="footer__heading">Popular Destination</h2>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">China</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Singapore</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Tokio</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Paris</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="footer__box">
+                <h2 class="footer__heading">Contact</h2>
+                <p class="footer__link">
+                    +1 (300) 1234 6543
+                    <br> Info@Tnest.Com
+                    <br> North Warnner Park 336/A
+                    <br> Newyork, USA
+                </p>
+            </div>
+        </div>
+        <p class="footer__copy">&copy; Copyright 2018 Dotour | All Right Reserved</p>
+    </section>
+    <!-- Footer section End -->
+
+    <div>
+        <div></div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <!-- Date Picker JS -->
+    <script src="assets/js/datepicker.js"></script>
+    <!-- Owl Carousal JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

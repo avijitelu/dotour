@@ -1,0 +1,101 @@
+.travelinfo {
+
+    margin-top: -25rem;
+
+    &__container {
+        width: 80%;
+        margin: auto;
+        box-shadow: 0 5px 15px rgba(0,0,0,.2);
+        background-color: #fff;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__tab {
+        list-style: none;
+        display: flex;
+    }
+
+    &__list {
+        padding: 1.5rem 3rem;
+        font-size: 1.7rem;
+        margin-right: 2px;
+        color: var(--color-grey-dark-2);
+        background-color: var(--color-primary);
+        font-weight: 700;
+        transition: all .2s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--color-grey-light-1);
+        }
+    }
+
+    .active__tab {
+        background-color: #fff;
+    }
+
+    &__holder {
+        padding: 3rem 3.5rem;
+        display: none;
+    }
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__box {
+        flex-grow: 1;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &__dest {
+
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__head {
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+    }
+
+    &__input {
+        width: 100%;
+        height: 4.8rem;
+        border: 1px solid rgb(196, 196, 196);
+        padding: 1rem;
+        // font-size: 1.6rem;
+        color: rgba(119, 119, 119,.8);
+        font-weight: 700;
+    }
+
+}
+
+.search {
+
+    margin-top: 2.5rem;
+
+    &__btn {
+        border: none;
+        background-color: var(--color-primary);
+        padding: 1.5rem 3rem;
+        color: var(--color-grey-dark-2);
+        font-size: 1.8rem;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: all .3s;
+        box-shadow: 0 3px 10px rgba(0,0,0,.3);
+
+        &:hover {
+            outline: none;
+            // box-shadow: 0 3px 10px rgba(0,0,0,.3);
+        }
+    }
+}
+
